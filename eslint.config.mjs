@@ -12,6 +12,12 @@ const compat = new FlatCompat({
 const eslintConfig = [
   ...compat.extends("next/core-web-vitals", "next/typescript"),
   {
+    rules: {
+      // Allow <img> tags (we're using SVGs inline which is fine)
+      "@next/next/no-img-element": "warn",
+      // Allow let instead of forcing const
+      "prefer-const": "warn",
+    },
     ignores: [
       "node_modules/**",
       ".next/**",

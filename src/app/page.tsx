@@ -113,11 +113,9 @@ export default function Home() {
                           disabled={!message.trim()}
                           aria-label="Send message"
                         >
-                          <img 
-                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfklEQVR4nO2Z0UoCQRSGvy70HSofKL0xIumiHsDQp8teoVpKewSF1oKoK/XOYGLhCDK52zbO2WZhPjjgxXjO/68zx+EsRCKRSJ1pAkMgAVaA8RAr4AEYSH41joBnT6JNTkyAQw3xzQrEG4kx0PBtYFiReCNx7dtAYhW4kS3lg2NgZOW/xzNLq0BW1CctK//Cc/4fP7EGRrNGNFACEw14SN4DPoFX4FSphhOzrcTTnDUHwMfWujVwEYqBNpBKnBSse7dE/MWEqWCb/sqZiHYxYUIwkHG+w8QXcFUXA64mzL4GOtZh1Yh1QXfa28BcWfwmUi0DaUUGXrQMtKXH13YL+aSXc4gvC74TjAEX8cEY6Ib6R9aRLjWXs1K2EQRzlZiVuMxlvDmKVzdQNnlX2uRUPmvUcKKKA2aigQKigf+usaj7YCuxCow8mmgBt9qjxYHyJc9Y0dcYr08qEv+oMV5HXjyMlcU/ab3g2NCQ2f3djom1aywlX1/ryUcikQje+AZvWSAsR0YsRwAAAABJRU5ErkJggg==" 
-                            alt="Send" 
-                            className="w-6 h-6"
-                          />
+                          <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                          </svg>
                         </button>
                       </div>
                     </div>
@@ -155,11 +153,9 @@ export default function Home() {
                       disabled={!message.trim()}
                       aria-label="Send follow-up message"
                     >
-                      <img 
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABfklEQVR4nO2Z0UoCQRSGvy70HSofKL0xIumiHsDQp8teoVpKewSF1oKoK/XOYGLhCDK52zbO2WZhPjjgxXjO/68zx+EsRCKRSJ1pAkMgAVaA8RAr4AEYSH41joBnT6JNTkyAQw3xzQrEG4kx0PBtYFiReCNx7dtAYhW4kS3lg2NgZOW/xzNLq0BW1CctK//Cc/4fP7EGRrNGNFACEw14SN4DPoFX4FSphhOzrcTTnDUHwMfWujVwEYqBNpBKnBSse7dE/MWEqWCb/sqZiHYxYUIwkHG+w8QXcFUXA64mzL4GOtZh1Yh1QXfa28BcWfwmUi0DaUUGXrQMtKXH13YL+aSXc4gvC74TjAEX8cEY6Ib6R9aRLjWXs1K2EQRzlZiVuMxlvDmKVzdQNnlX2uRUPmvUcKKKA2aigQKigf+usaj7YCuxCow8mmgBt9qjxYHyJc9Y0dcYr08qEv+oMV5HXjyMlcU/ab3g2NCQ2f3djom1aywlX1/ryUcikQje+AZvWSAsR0YsRwAAAABJRU5ErkJggg==" 
-                        alt="Send" 
-                        className="w-6 h-6"
-                      />
+                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                      </svg>
                     </button>
                   </div>
                 </div>

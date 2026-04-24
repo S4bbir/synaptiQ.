@@ -70,7 +70,7 @@ interface AIResponse {
  */
 function formatAIResponse(response: string): string {
   // Remove any ** markers that might appear
-  let formattedResponse = response.replace(/\*\*/g, '');
+  const formattedResponse = response.replace(/\*\*/g, '');
 
   return formattedResponse;
 }
@@ -90,9 +90,12 @@ export async function getAIResponse(userMessage: string): Promise<AIResponse> {
     
     console.log('Sending request to Gemini API with message:', userMessage);
     
+    // Get API key from environment variable or use the hardcoded one
+    const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || 'AIzaSyAPmCWFamVN5e-sVIihX1Zc_g_fGsv2yJE';
+    
     // Call the Gemini API with the gemini-2.5-flash-lite model
     const response = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=AIzaSyAPmCWFamVN5e-sVIihX1Zc_g_fGsv2yJE`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent?key=${apiKey}`,
       {
         method: 'POST',
         headers: {

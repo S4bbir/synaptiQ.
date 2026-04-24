@@ -4,6 +4,14 @@
   "installCommand": "npm install",
   "framework": "nextjs",
   "outputDirectory": ".next",
+  "github": {
+    "silent": true
+  },
+  "build": {
+    "env": {
+      "DISABLE_ESLINT_PLUGIN": "true"
+    }
+  },
   "headers": [
     {
       "source": "/(.*)",

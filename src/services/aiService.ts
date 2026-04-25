@@ -91,7 +91,7 @@ export async function getAIResponse(userMessage: string): Promise<AIResponse> {
     console.log('Sending request to Gemini API with message:', userMessage);
     
     // Get API key from environment variable or use the hardcoded one
-    const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || 'AIzaSyAPmCWFamVN5e-sVIihX1Zc_g_fGsv2yJE';
+    const apiKey = process.env.NEXT_PUBLIC_GEMINI_API_KEY || 'AIzaSyDnqmX8rhbmyrd4hbU0IGnW67HyAYNqSVQ';
     
     // Call the Gemini API with the gemini-2.5-flash-lite model
     const response = await fetch(
